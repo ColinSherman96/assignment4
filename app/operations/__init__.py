@@ -1,5 +1,5 @@
 """
-This __init__.py file is now being updated for assignment 3 to work with the new class definitions.
+This __init__.py file is now being updated for assignment 4 to work with the new class definitions.
 
 For brevity's sake, I haven't repeated the descriptions of each opertation here. They can be found in test_operations.py, within the tests folder.
 """
@@ -32,3 +32,16 @@ class operations:
         # This part checks if 'b' is zero. If it is, we raise an error and stop the function.
             raise ZeroDivisionError("Cannot divide by zero")  # This sends an error message when someone tries to divide by zero.
         return a / b  # If 'b' is not zero, we divide the first number (a) by the second number (b) and return the result.
+    
+    @staticmethod
+    def power(a: float, b: float) -> float:
+        return a ** b
+
+    @staticmethod
+    def modulus(a: float, b: float) -> float:
+        if b == 0:
+            raise ZeroDivisionError("Cannot perform modulus by zero")
+        return a % b
+    
+    
+
